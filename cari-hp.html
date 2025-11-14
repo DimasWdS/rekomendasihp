@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Pakar Rekomendasi HP</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-card-hasil.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔍 Sistem Pakar Rekomendasi HP</h1>
+      <p>Jawab beberapa pertanyaan untuk mendapatkan rekomendasi HP terbaik!</p>
+
+      <form id="expertSystemForm">
+        <div class="question-group">
+          <label for="anggaran">1. Berapa anggaran Anda?</label>
+          <select id="anggaran" name="anggaran" required>
+            <option value="">Pilih...</option>
+            <option value="tinggi">Tinggi (Rp 8jt++)</option>
+            <option value="menengah">Menengah (Rp 5jt - 8jt)</option>
+            <option value="rendah">Rendah (Dibawah Rp 5jt)</option>
+          </select>
+        </div>
+
+        <div class="question-group">
+          <label for="prioritas">2. Apa prioritas utama Anda?</label>
+          <select id="prioritas" name="prioritas" required>
+            <option value="">Pilih...</option>
+            <option value="game">Gaming / Performa Tinggi/ Edit video</option>
+            <option value="foto">Kamera / Fotografi</option>
+            <option value="bisnis">
+              Bisnis / Produktivitas / multitasking
+            </option>
+            <option value="outdoor">
+              Keperluan kerja di lapangan (seperti ojek online)
+            </option>
+          </select>
+        </div>
+
+        <div class="question-group">
+          <label for="baterai">3. Seberapa penting baterai tahan lama?</label>
+          <select id="baterai" name="baterai" required>
+            <option value="">Pilih...</option>
+            <option value="ya">Sangat Penting</option>
+            <option value="tidak">Tidak terlalu</option>
+          </select>
+        </div>
+
+        <button type="submit">Dapatkan Rekomendasi</button>
+      </form>
+
+      <!-- <div id="hasil-rekomendasi" class="hasil-box">
+        <h2>🎉 Hasil Rekomendasi</h2>
+        <p id="rekomendasi-text">Silakan isi formulir di atas.</p>
+      </div> -->
+    </div>
+
+    <section class="container-hasil"></section>
+    <script type="module" src="javascript/script.js"></script>
+  </body>
+</html>
