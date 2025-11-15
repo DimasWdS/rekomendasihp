@@ -21,6 +21,7 @@ function cardHasil(conTarget, data) {
   container.classList.add("dser");
   div1.classList.add("safe");
   div2.classList.add("iojk");
+  conPrice.classList.add("dhgu");
 
   img.setAttribute("alt", "foto-hp");
   img.setAttribute("loading", "lazy");
@@ -32,7 +33,6 @@ function cardHasil(conTarget, data) {
     position: "absolute",
     width: "90%",
     height: "2rem",
-    backgroundColor: "green",
     bottom: "0",
     marginBottom: "5%",
     display: "flex",
@@ -40,6 +40,7 @@ function cardHasil(conTarget, data) {
     justifyContent: "center",
     borderRadius: "10px",
     color: "white",
+    fontWeight: "bold",
   });
 
   conPrice.textContent = `Rp ${data.price}`;
@@ -60,6 +61,11 @@ function cardHasil(conTarget, data) {
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
+    });
+
+    Object.assign(teks.style, {
+      fontFamily: "monospace",
+      fontWeight: "bold",
     });
 
     switch (true) {
@@ -115,6 +121,7 @@ function cardHasil(conTarget, data) {
   Object.assign(moreSpecTeks.style, {
     padding: "0 0.3rem 3rem 0.8rem",
     fontFamily: "Monospace",
+    fontWeight: "bold",
   });
 
   moreSpecTeks.textContent = `Speaker ${data.speaker}, Network ${data.network}, Battery ${data.battery}mAh`;

@@ -1,4 +1,4 @@
-import { rules, data, cardHasil } from "./../module/module.mjs";
+import { rules, data, cardHasil, createHeader } from "./../module/module.mjs";
 
 // console.log(data);
 
@@ -94,6 +94,9 @@ document
         break;
       case resultRule.desc === "hp-outdoor-entrylevel":
         {
+          const teks =
+            "bdsijfcnsiosbvf ioshnzfdcsoebvioe sdovjmcierbgnruiinv ziksbncvbuierdsh,fhzl ";
+          createHeader(conTarget, teks);
           const find = data.filter((hp) => {
             const isScreenOk = hp.screen === "ips";
 
@@ -316,5 +319,9 @@ document
         break;
     }
   });
+
+const teks =
+  "bdsijfcnsiosbvf ioshnzfdcsoebvioe aihdiaohdioahdioahiodhaio sdovjmcierbgnruiinv ziksbncvbuierdsh,fhzl ";
+createHeader(conTarget, teks);
 
 // cardHasil(conTarget);

@@ -123,6 +123,30 @@ const rules = [
     goal: "HP outdoor Entry Level Ignore Battery",
     desc: "hp-outdoor-entrylevel-ignore-battery",
   },
+  {
+    id: "R10",
+    premises: { prioritas: "outdoor", anggaran: "menengah", baterai: "ya" },
+    goal: "HP outdoor Mid-Range",
+    desc: "hp-outdoor-midrange",
+  },
+  {
+    id: "R10V2",
+    premises: { prioritas: "outdoor", anggaran: "menengah", baterai: "tidak" },
+    goal: "HP outdoor Mid-Range Ignore Battery",
+    desc: "hp-outdoor-midrange-ignore-battery",
+  },
+  {
+    id: "R11",
+    premises: { prioritas: "outdoor", anggaran: "tinggi", baterai: "ya" },
+    goal: "HP outdoor Flagship",
+    desc: "hp-outdoor-flagship",
+  },
+  {
+    id: "R11V2",
+    premises: { prioritas: "outdoor", anggaran: "tinggi", baterai: "tidak" },
+    goal: "HP outdoor Flagship Ignore Battery",
+    desc: "hp-outdoor-flagship-ignore-battery",
+  },
 ];
 
 export { rules };
