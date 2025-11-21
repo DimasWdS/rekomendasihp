@@ -95,8 +95,6 @@ button:hover {
 .container-hasil {
   width: 90%;
   max-width: 50rem;
-  /* height: 10rem; */
-  /* background-color: #d9534f; */
   display: flex;
   flex-direction: column;
   gap: 2rem;

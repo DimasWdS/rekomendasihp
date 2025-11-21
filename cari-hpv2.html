@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuesioner Bertingkat</title>
+    <link rel="stylesheet" href="css/cari-hpv2.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style-card-hasil.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <section class="con-btn-close">
+          <a id="btn-close-carihp" href="index.html"></a>
+        </section>
+        <header>
+          <h1>🔍 Sistem Pakar Rekomendasi HP</h1>
+        </header>
+
+        <h2>Harap dibaca terlebih dahulu !</h2>
+        <div class="container-penjelasan">
+          <div class="card-penjelasan">
+            <span></span>
+            <p>
+              Untuk Gaming / Performa Tinggi/ Edit video sudah termasuk ram
+              besar, penyimpanan besar, layar amoled, chipset kencang.
+            </p>
+          </div>
+          <div class="card-penjelasan">
+            <span></span>
+            <p>
+              Untuk Bisnis / Produktivitas / multitasking termasuk ram besar,
+              penyimpanan besar,kamera bagus dan chipset kencang untuk
+              multitasking.
+            </p>
+          </div>
+          <div class="card-penjelasan">
+            <span></span>
+            <p>
+              Untuk Kamera / Fotografi termasuk kamera bagus dikelas harganya,
+              dan penyimpanan besar.
+            </p>
+          </div>
+          <div class="card-penjelasan">
+            <span></span>
+            <p>
+              Untuk kerja di lapangan (seperti ojek online) kami menyarankan hp
+              dengan layar ips, karena untuk aktivitas diluar ruangan layar ips
+              sangan cocok daripada layar amolde
+            </p>
+          </div>
+        </div>
+
+        <div class="container-quiz">
+          <div id="quiz-box">
+            <h3 id="phase-title">Pertanyaan Golongan 1:</h3>
+            <h2 id="question-text">Memuat...</h2>
+
+            <div class="btn-group">
+              <button id="btn-yes" class="btn-yes">
+                <span></span>
+                <p>iya</p>
+              </button>
+              <button id="btn-no" class="btn-no">
+                <span></span>
+                <p>tidak</p>
+              </button>
+            </div>
+          </div>
+
+          <div id="result-area">
+            <h2 class="success-text">Selesai!</h2>
+            <p>Ringkasan</p>
+
+            <div id="final-result-container"></div>
+
+            <button onclick="location.reload()" class="btn-reload">
+              Ulangi
+            </button>
+
+            <button id="cari-rekomendasi">Cari Rekomendasi</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-hasil"></section>
+    </main>
+
+    <script type="module" src="javascript/cari-hpv2.js"></script>
+    <script type="module" src="javascript/cari-hp.js"></script>
+  </body>
+</html>
