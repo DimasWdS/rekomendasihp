@@ -25,12 +25,7 @@ function cardHasil(conTarget, data) {
 
   img.setAttribute("alt", "foto-hp");
   img.setAttribute("loading", "lazy");
-  // img.setAttribute("src", `asset/img-hp/${data.foto}`);
-
-  Object.assign(img.style, {
-    width: "100%",
-    // backgroundColor: "green",
-  });
+  img.setAttribute("src", `asset/img-hp/${data.foto}`);
 
   header.textContent = data.name;
 
