@@ -178,24 +178,25 @@ h2 {
   justify-content: center;
   gap: 15px;
 }
-button {
+.btn-pilihan {
   /* padding: 12px 25px; */
-  height: 2.5rem;
-  width: 8rem;
-  border: none;
-  border-radius: 2px;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-  transition: transform 0.1s;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 2.5rem !important;
 }
 
-button span {
+.btn-pilihan:nth-child(1) {
+  background-color: green !important;
+}
+.btn-pilihan:nth-child(2) {
+  background-color: red !important;
+}
+
+.btn-pilihan span {
   display: inline-flex;
-  height: 100%;
+  height: 2.5rem;
   aspect-ratio: 1/1;
   /* background-color: black; */
   background-position: center;
@@ -210,9 +211,6 @@ button:nth-child(2) span {
   background-image: url(../asset/icon/x-icon.svg);
 }
 
-button:active {
-  transform: scale(0.95);
-}
 .btn-yes {
   background-color: var(--green);
   color: white;
@@ -247,4 +245,18 @@ button:active {
   gap: 2rem;
   margin-bottom: 10rem;
   align-items: center;
+  margin-top: 5rem;
+}
+
+#final-result-container {
+  /* background-color: #4caf50; */
+  padding: 0 0 0 1rem;
+}
+
+.container-btn {
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/cari-hpv2.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style-card-hasil.css" />
+    <link rel="stylesheet" href="css/button.css" />
   </head>
   <body>
     <main>
@@ -58,11 +59,11 @@
             <h2 id="question-text">Memuat...</h2>
 
             <div class="btn-group">
-              <button id="btn-yes" class="btn-yes">
+              <button id="btn-yes" class="btn-yes btn-pilihan main-btn">
                 <span></span>
                 <p>iya</p>
               </button>
-              <button id="btn-no" class="btn-no">
+              <button id="btn-no" class="btn-no btn-pilihan main-btn">
                 <span></span>
                 <p>tidak</p>
               </button>
@@ -75,11 +76,15 @@
 
             <div id="final-result-container"></div>
 
-            <button onclick="location.reload()" class="btn-reload">
-              Ulangi
-            </button>
+            <section class="container-btn">
+              <button onclick="location.reload()" class="main-btn btn-reload">
+                Ulangi
+              </button>
 
-            <button id="cari-rekomendasi">Cari Rekomendasi</button>
+              <button id="cari-rekomendasi" class="main-btn">
+                Cari Rekomendasi
+              </button>
+            </section>
           </div>
         </div>
       </section>
