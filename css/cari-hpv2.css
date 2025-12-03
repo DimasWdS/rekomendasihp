@@ -263,9 +263,9 @@ button:nth-child(2) span {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 #final-result-container {

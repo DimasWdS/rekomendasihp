@@ -40,3 +40,66 @@
   display: flex;
   justify-content: center;
 }
+
+.adabyu {
+  display: none !important;
+}
+/* container prev dan next btn */
+.csdeeds {
+  margin-bottom: 10rem !important;
+  display: none;
+}
+.csdeeds div {
+  display: flex;
+  gap: 1rem;
+}
+.csdeeds div #next-btn,
+.csdeeds div #prev-btn {
+  display: inline-flex;
+  border: none;
+  background-color: var(--accen);
+  height: 3rem;
+  width: 12rem;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+@media (max-width: 640px) {
+  .csdeeds div {
+    display: flex;
+    gap: 0;
+  }
+  .csdeeds div #next-btn,
+  .csdeeds div #prev-btn {
+    transform: scale(0.8);
+  }
+}
+
+.csdeeds div button:active {
+  transform: scale(0.8);
+}
+
+.fkaug {
+  height: 90%;
+  aspect-ratio: 1/1;
+  /* background-color: aliceblue; */
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.csdeeds div button:nth-child(1) .fkaug {
+  background-image: url(./../asset/icon/arrow_back.svg);
+}
+.csdeeds div button:nth-child(2) .fkaug {
+  background-image: url(./../asset/icon/arrow_forward.svg);
+}
+
+.csdeeds div button section {
+  font-weight: 800;
+  font-size: 1.6em;
+  color: var(--bg1);
+}
