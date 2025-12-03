@@ -9,11 +9,6 @@ html {
   font-family: "Inter", sans-serif;
 }
 
-:root {
-  --bg1: #dddeff;
-  --accen: #007bff;
-}
-
 .container-home {
   height: 100dvh;
   width: 100%;

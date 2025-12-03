@@ -1,5 +1,5 @@
 body {
-  background-color: #333;
+  background-color: var(--bg1);
 }
 
 main {
@@ -36,13 +36,15 @@ main {
 
 .container {
   position: relative;
-  background-color: var(--bg2);
+  background-color: var(--bg1);
   margin-top: 4rem;
   width: 90%;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
-  border: 2px solid var(--outline);
+  border-radius: 10px;
+  /* outline: 20px solid var(--outline); */
+  /* background-color: #4caf50; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .container header {
@@ -52,16 +54,7 @@ main {
   color: var(--bg2);
   position: relative;
   margin-top: 1rem;
-}
-
-.container header::before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 90%;
-  border-radius: 0 50px 50px 0;
-  background-color: var(--accen);
-  left: 0;
+  color: var(--accen);
 }
 
 .container header h1 {
@@ -88,10 +81,17 @@ main {
   gap: 0.5rem;
   align-items: center;
   border-radius: 5px;
-  border: 2px solid var(--accen);
+  border: 1px solid transparent;
+  box-shadow: rgba(32, 32, 36, 0) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0) 0px 1px 3px -1px;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-penjelasan:hover {
+  border: 1px solid var(--accen);
   box-shadow: rgba(32, 32, 36, 0.765) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.658) 0px 1px 3px -1px;
-  padding: 1rem;
 }
 
 .card-penjelasan span {
@@ -100,26 +100,37 @@ main {
   aspect-ratio: 1/1;
   /* background-color: green; */
   background-position: center;
-  background-size: cover;
+  background-size: 50%;
   background-repeat: no-repeat;
   border-radius: 10px;
 }
 
 .card-penjelasan:nth-child(1) span {
-  background-image: url(../asset/icon/gamepad-icon.png);
-  background-color: #4caf50;
+  background-color: #d2d2d2;
+}
+
+.card-penjelasan:nth-child(1) span {
+  background-image: url(../asset/icon/gamepad.svg);
+  /* background-color: #4caf50; */
+  background-color: var(--accen);
 }
 .card-penjelasan:nth-child(2) span {
-  background-image: url(../asset/icon/kamera-icon.png);
-  background-color: chocolate;
+  background-image: url(../asset/icon/camera.svg);
+  /* background-color: chocolate; */
+  /* background-color: #d2d2d2; */
+  background-color: var(--accen);
 }
 .card-penjelasan:nth-child(3) span {
-  background-image: url(../asset/icon/bisnis-icon.png);
-  background-color: orchid;
+  background-image: url(../asset/icon/buissnes.svg);
+  /* background-color: orchid; */
+  /* background-color: #d2d2d2; */
+  background-color: var(--accen);
 }
 .card-penjelasan:nth-child(4) span {
-  background-image: url(../asset/icon/sun-icon.png);
-  background-color: salmon;
+  background-image: url(../asset/icon/sun.svg);
+  /* background-color: salmon; */
+  /* background-color: #d2d2d2; */
+  background-color: var(--accen);
 }
 
 .card-penjelasan p {
@@ -179,19 +190,28 @@ h2 {
   gap: 15px;
 }
 .btn-pilihan {
-  /* padding: 12px 25px; */
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 2.5rem !important;
+  background-color: var(--bg1) !important;
+  width: 7rem;
+  border-radius: 5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border: none;
+  border: 1px solid var(--accen);
+  transition: all 0.3s ease-in-out;
+}
+.btn-pilihan p {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--font);
 }
 
-.btn-pilihan:nth-child(1) {
-  background-color: green !important;
-}
-.btn-pilihan:nth-child(2) {
-  background-color: red !important;
+.btn-pilihan:active {
+  transform: scale(0.8);
 }
 
 .btn-pilihan span {
@@ -239,7 +259,7 @@ button:nth-child(2) span {
 
 .container-hasil {
   width: 90%;
-  max-width: 50rem;
+  max-width: 80rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;

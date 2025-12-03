@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <!-- <link rel="stylesheet" href="./css/style-card-hasil.css" /> -->
     <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/universal.css" />
   </head>
   <body>
     <main>
@@ -59,11 +60,11 @@
             <h2 id="question-text">Memuat...</h2>
 
             <div class="btn-group">
-              <button id="btn-yes" class="btn-yes btn-pilihan main-btn">
+              <button id="btn-yes" class="btn-yes btn-pilihan">
                 <span></span>
                 <p>iya</p>
               </button>
-              <button id="btn-no" class="btn-no btn-pilihan main-btn">
+              <button id="btn-no" class="btn-no btn-pilihan">
                 <span></span>
                 <p>tidak</p>
               </button>
@@ -77,22 +78,22 @@
             <div id="final-result-container"></div>
 
             <section class="container-btn">
-              <button onclick="location.reload()" class="main-btn btn-reload">
-                Ulangi
-              </button>
-
               <button id="cari-rekomendasi" class="main-btn">
                 Cari Rekomendasi
+              </button>
+              <button onclick="location.reload()" class="main-btn btn-reload">
+                Ulangi
               </button>
             </section>
           </div>
         </div>
       </section>
-
+      <section class="container-header"></section>
       <section class="container-hasil"></section>
     </main>
 
     <script type="module" src="javascript/cari-hpv2.js"></script>
     <script type="module" src="javascript/cari-hp.js"></script>
+    <script type="module" src="javascript/new-card.js"></script>
   </body>
 </html>

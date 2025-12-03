@@ -5,13 +5,9 @@ body {
 }
 
 :root {
-  --bg1: #222831;
-  --bg2: #f5f7f8;
-  --outline: #aaaaaa;
+  --bg1: #fdfaf6;
   --accen: #007bff;
   --font: #1e1e1e;
-  --green: rgb(25, 143, 25);
-  --red: rgb(173, 16, 16);
 }
 
 img {
