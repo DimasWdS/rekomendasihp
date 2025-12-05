@@ -14,6 +14,13 @@ body {
 img {
   width: 100%;
 }
+
+@media (max-width: 640px) {
+  .mobile-gone {
+    display: none !important;
+  }
+}
+
 .dser {
   width: 100%;
   height: 20rem;
