@@ -4,6 +4,10 @@ body {
   font-family: "Poppins" !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --bg1: #fdfaf6;
   --bg2: #d1d1d1;
